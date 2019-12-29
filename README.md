@@ -6,7 +6,7 @@ example usage to sync everything in the workspace folder:
 
 ```yml
 - name: deploy to server
-  uses: petanikode/rsync-deploy@master
+  uses: petanikode/rsync-deploy@v1.2
   env:
     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     RSYNC_ARGS: "-ahzur --delete"
