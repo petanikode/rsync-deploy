@@ -13,8 +13,8 @@ example usage to sync everything in the workspace folder:
     BUILD_DIR: "public" # deploy dir (public)
     SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
     SERVER_IP: ${{ secrets.SERVER_IP }}
-    SERVER_PORT: ${{ secrets.SERVER_PORT }}
-    DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }} # server path /home/user/public_html
+    SERVER_PORT: ${{ secrets.SERVER_PORT }} # ssh port
+    DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }} # server path /home/<user>/public_html
 ```
 
 If you only want to sync a specific subfolder you can put that folder in the folder env var instead
